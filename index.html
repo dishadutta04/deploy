@@ -7,8 +7,8 @@
 
   <title>Disha Portfolio | B.Tech Student | DSA & Web Developer</title>
 
-  <meta name="description" content="Disha - Final year B.Tech student. DSA learner, Web Developer, building projects and solving coding challenges daily." />
-  <meta name="keywords" content="Disha portfolio, BTech student, DSA, web developer, coding, India" />
+  <meta name="description" content="Disha - Final year B.Tech student. DSA learner, Web Developer, building projects and solving coding challenges daily. Jaipur coaching institutes list." />
+  <meta name="keywords" content="Disha portfolio, BTech student, DSA, web developer, Jaipur coaching institutes, Allen Jaipur, Resonance Jaipur, Aakash Jaipur" />
   <meta name="author" content="Disha" />
 
   <meta property="og:title" content="Disha Portfolio" />
@@ -31,7 +31,7 @@
   }
 
   main {
-    flex: 1; /* pushes footer to bottom */
+    flex: 1;
   }
 
   header {
@@ -40,6 +40,10 @@
 
   h1 {
     font-size: 2.5rem;
+    color: #38bdf8;
+  }
+
+  h2 {
     color: #38bdf8;
   }
 
@@ -61,6 +65,32 @@
     font-weight: bold;
   }
 
+  section {
+    padding: 40px 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    background: #020617;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(56,189,248,0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
   footer {
     padding: 20px;
     font-size: 0.9rem;
@@ -72,6 +102,8 @@
 <body>
 
   <main>
+
+    <!-- HERO SECTION -->
     <header>
       <h1>Hi, I'm Disha 👋</h1>
       <p>
@@ -82,6 +114,66 @@
 
       <a class="btn" href="https://github.com/dishadutta04/" target="_blank">My GitHub</a>
     </header>
+
+    <!-- COACHING SECTION -->
+    <section id="coaching">
+      <h2>Top Coaching Institutes in Jaipur</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Allen Career Institute</h3>
+          <p>Best for IIT-JEE & NEET preparation with top results every year.</p>
+        </div>
+
+        <div class="card">
+          <h3>Resonance</h3>
+          <p>Popular for JEE Advanced preparation and strong test series.</p>
+        </div>
+
+        <div class="card">
+          <h3>Aakash Institute</h3>
+          <p>Well-known for NEET and JEE coaching with experienced faculty.</p>
+        </div>
+
+        <div class="card">
+          <h3>Career Point</h3>
+          <p>Structured learning programs for engineering and medical exams.</p>
+        </div>
+
+        <div class="card">
+          <h3>Motion Education</h3>
+          <p>Good faculty and study material for JEE and NEET aspirants.</p>
+        </div>
+
+        <div class="card">
+          <h3>FIITJEE</h3>
+          <p>Advanced problem solving approach for IIT-JEE preparation.</p>
+        </div>
+
+        <div class="card">
+          <h3>Narayana Institute</h3>
+          <p>Focused preparation with daily practice sheets and tests.</p>
+        </div>
+
+        <div class="card">
+          <h3>Vibrant Academy</h3>
+          <p>Top results in IIT-JEE with experienced Kota faculty.</p>
+        </div>
+
+        <div class="card">
+          <h3>Rao IIT Academy</h3>
+          <p>Concept-based learning and good for foundation courses.</p>
+        </div>
+
+        <div class="card">
+          <h3>Target Classes</h3>
+          <p>Affordable coaching for JEE Main and board preparation.</p>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <footer>
